@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load crispy_forms_tags %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Update </title>
+    
+    <center><h1><b>  Update Student Info  </b> </h1></center>
+    <hr>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body><center>
+    <div class="container">
+        <form action="" method="POST" enctype ="multipart/form-data"> {% csrf_token%}
+            {{form | crispy}}
+            <hr>
+            <center><button type ="Submit" class = 'btn btn-warning'> Update </button></center>
+        </form>
+    </div>
+    </center>
+</body>
+</html> 
